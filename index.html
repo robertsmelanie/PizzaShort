@@ -8,7 +8,42 @@
 </head>
 <body>
     <h1>Pizza Shop</h1>
+    <h1>Order a Pizza 🍕</h1>
     
+    <form id="pizzaForm">
+        <label for="pizzaType">Choose your pizza:</label>
+        <select id="pizzaType">
+            <option value="Cheese">Cheese</option>
+            <option value="Pepperoni">Pepperoni</option>
+            <option value="Veggie">Veggie</option>
+            <option value="Hawaiian">Hawaiian</option>
+        </select>
+        <button type="submit">Order</button>
+    </form>
+    
+    <h2>Orders:</h2>
+    <ul id="orderList"></ul>
+    
+    <!-- <script>
+        const pizzaForm = document.getElementById('pizzaForm');
+        const pizzaType = document.getElementById('pizzaType');
+        const orderList = document.getElementById('orderList');
+        const orders = [];
+
+        pizzaForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Stop the page from refreshing
+
+            const selectedPizza = pizzaType.value;
+            orders.push(selectedPizza);
+
+            // Update the visible list
+            const li = document.createElement('li');
+            li.textContent = selectedPizza;
+            orderList.appendChild(li);
+
+            console.log("Current Orders:", orders);
+        });
+    </script> -->
 
 
 
